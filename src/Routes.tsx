@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import App from './App';
+import App from '@/App.tsx';
 
 const routes = createBrowserRouter([
   {
