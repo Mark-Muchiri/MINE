@@ -50,7 +50,7 @@ function App() {
             {/* Necessary attributes: name, label, type, value, onChange */}
             {/* Essential input tags for React: `name`, `value` */}
             <Input
-              name='Username'
+              name='username'
               label='User name'
               type='text'
               onChange={handleChange}
