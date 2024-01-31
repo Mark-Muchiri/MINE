@@ -11,7 +11,8 @@ module.exports = withMT({
     extend: {},
   },
   plugins: [ require("daisyui") ],
+  //? used for app theme
   daisyui: {
-    themes: [ "light", "dark", "night" ],
+    themes: [],
   },
 });

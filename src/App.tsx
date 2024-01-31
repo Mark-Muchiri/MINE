@@ -80,7 +80,7 @@ function App() {
             <Input
               name='password'
               label='Password'
-              type='text'
+              type='password'
               onChange={handleChange}
               value={formData.password}
               className=''
@@ -94,7 +94,7 @@ function App() {
             <Input
               name='confirmPassword'
               label='Confirm password'
-              type='text'
+              type='password'
               onChange={handleChange}
               value={formData.confirmPassword}
               className=''
