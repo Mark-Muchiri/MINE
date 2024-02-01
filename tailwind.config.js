@@ -13,6 +13,6 @@ module.exports = withMT({
   plugins: [ require("daisyui") ],
   //? used for app theme
   daisyui: {
-    themes: [],
+    themes: ["light", "night"],
   },
 });

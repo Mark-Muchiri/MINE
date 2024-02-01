@@ -44,8 +44,8 @@ function App() {
       </main>
 
       {/* -------- start of form -------- */}
-      <div className="m-7">
-        <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
+      <div className="m-8">
+        <form className="max-w-[430px] mx-auto" onSubmit={handleSubmit}>
           <div className="relative z-0 w-full mb-5 group">
             {/* Necessary attributes: name, label, type, value, onChange */}
             {/* Essential input tags for React: `name`, `value` */}
@@ -62,6 +62,9 @@ function App() {
               crossOrigin={undefined}
             />
           </div>
+
+          {/* userneme input inspect */}
+
           <div className="relative z-0 w-full mb-5 group">
             <Input
               name='email'
@@ -104,7 +107,7 @@ function App() {
               crossOrigin={undefined}
             />
           </div>
-          <div className="grid md:grid-cols-2 md:gap-6">
+          <div className="grid md:grid-cols-2 md:gap-10">
             <div className="relative z-0 w-full mb-5 group">
               <Input
                 name='firstName'
@@ -134,11 +137,11 @@ function App() {
               />
             </div>
           </div>
-          <div className="grid md:grid-cols-2 md:gap-6">
+          <div className="grid md:grid-cols-2 md:gap-10">
             <div className="relative z-0 w-full mb-5 group">
               <Input
                 name='phoneNumber'
-                label='Phone number ( +123-456-7890 )'
+                label='Phone number'
                 type='text'
                 onChange={handleChange}
                 value={formData.phoneNumber}
@@ -163,8 +166,9 @@ function App() {
                 crossOrigin={undefined}
               />
             </div>
+            
           </div>
-          <button type="submit" className="text-blue bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+          <button type="submit" className="text-blue bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-full lg:w-full xl:w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
         </form>
       </div>
       {/* -------- End of form -------- */}
