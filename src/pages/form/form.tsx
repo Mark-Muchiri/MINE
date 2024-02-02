@@ -1,9 +1,7 @@
 import { Input } from '@material-tailwind/react';
-import './App.css';
-import Nav from './components/Nav.tsx';
 import { ChangeEvent, FormEvent, useState } from 'react';
 
-function App() {
+function Form() {
   const [ formData, setFormData ] = useState(
     {
       username: '',
@@ -28,12 +26,11 @@ function App() {
   }
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    console.log("🚀 ~ file: App.tsx:31 ~ InputChanges ~ formData:", formData);
+    console.log("🚀 ~ file: Form.tsx:31 ~ InputChanges ~ formData:", formData);
   }
 
   return (
     <>
-      <Nav />
       <p className='text-center mt-5 font-light text-3xl text-stone-300'>
         FORM TEMPLATE
       </p>
@@ -166,7 +163,7 @@ function App() {
                 crossOrigin={undefined}
               />
             </div>
-            
+
           </div>
           <button type="submit" className="text-blue bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-full lg:w-full xl:w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
         </form>
@@ -176,4 +173,4 @@ function App() {
   );
 }
 
-export default App;
+export default Form;
