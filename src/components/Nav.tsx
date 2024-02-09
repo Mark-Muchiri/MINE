@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Nav() {
   return (
     <>
@@ -6,6 +8,15 @@ function Nav() {
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>
         <div className="flex-none">
+          {/* links */}
+          <div className="flex flex-row gap-2">
+            <Link to='.'>link</Link>
+            <Link to='.'>link</Link>
+            <Link to='.'>link</Link>
+            <Link to='.'>link</Link>
+          </div>
+
+          {/* Cart icon */}
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
               <div className="indicator">
@@ -23,6 +34,8 @@ function Nav() {
               </div>
             </div>
           </div>
+
+          {/* Profile icon */}
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
